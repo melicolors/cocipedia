@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+    <style>
+        body {
+            max-width: 1080px;
+            padding: 2rem 4rem;
+            border-right: 2px solid rgb(49, 49, 49);
+            border-left: 2px solid rgb(49, 49, 49);
+            margin: 0 auto;
+            background: #4f1431;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Gilda Display", serif;
+            color: #e8d7d0;
+            text-align: center;
+        }
+
+        .links {
+            color: rgb(240, 240, 240);
+        }
+
+        .navbar {
+            width: 1080px;
+            height: 100px;
+            background-color: #ad006b;
+            padding: 24px;
+
+        }
+
+        .formulario {
+            text-align: left;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <table class="navbar">
+            <td style="text-align: left;">
+                <h1 class="titulo-pagina">Cocipedia</h1>
+            </td>
+            <td style="text-align:right;"><a class="links" href="index.html">Home</a></td>
+        </table>
+
+
+    </header>
+    <br><br>
+    <form class="formulario">
+        <label for="nombre">Nombre</label>
+        <input required type="text" id="nombre" placeholder="Escribe tu nombre">
+        <br><br>
+        <label for="correo">Correo electrónico</label>
+        <input required id="correo" type="email" placeholder="Correo">
+        <br><br>
+        <label for="telefono">Nro de teléfono</label>
+        <input id="telefono" type="tel" maxlength="18" minlength="8" placeholder="+584140000000">
+        <br><br>
+        <label for="contraseña">Contraseña</label>
+        <input required id="contraseña" type="password" placeholder="1234">
+        <br><br><br>
+
+        <label for="">Genero:</label>
+        <br>
+        <input id="fem" type="radio" name="genero">
+        <label for="masc">Hombre</label>
+        <br>
+        <input id="neutro" type="radio" name="genero">
+        <label for="fem">Mujer</label>
+        <br>
+        <input id="neutro" type="radio" name="genero">
+        <label for="masc">Prefiero no decirlo</label>
+
+        <br><br>
+        <input required type="checkbox" id="terminos">
+        <label for="terminos">Acepto los <a target="_blank" href="terminosycondiciones.html" class="links">Términos y
+                condiciones.</a></label>
+        <br><br>
+        <button type="submit">
+            Enviar
+        </button>
+    </form>
+    <br><br><br>
+    <footer class="navbar">
+        <a class="links" href="">Volver arriba</a>
+        <br>
+        <p class="links">Copyrigth 2024</p>
+    </footer>
+</body>
+
+</html>
